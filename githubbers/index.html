@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>CCI-Grads - GitHubbers</title>
+
+<style>
+
+@import url(http://fonts.googleapis.com/css?family=Istok+Web);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+h1, h2 {
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, footer, #planet {
+  font-family: "Oswald", serif;
+  color: #000;
+}
+
+body {
+  color: #333;
+  margin: 1em auto 4em auto;
+  width: 960px;
+  font-family: "Istok Web", sans-serif;
+  background-image:url(lib/debut_light.png); 
+  background-repeat:repeat;
+}
+
+body > p {
+  width: 720px;
+}
+
+</style>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+
+<h1>GitHubbers</h1>
+
+<p>A directory of GitHubbers at UNC-Charlotte</p>
+
+<div id="githubbers"></div>
+
+<footer>
+  <a href="../" rel="author">CCI-Grads</a>
+</footer>
+
+
+<script>
+
+d3.json('githubbers.json', function(d) {
+  render(d, '#githubbers');
+});
+
+function render(d, target) {
+var div = d3.select(target);
+
+var githubbers = div.selectAll('githubbers')
+  .data(d)
+  .enter().append('p');
+
+var names = githubbers.append('div')
+  .classed('name', true)
+  .text(function(d) { return d.name; });
+
+var githubs = githubbers.append('a')
+  .classed('username', true)
+  .attr('href', function(d) { return "http://github.com/" + d.username; })
+  .text(function(d) { return "http://github.com/" + d.username; });
+}
+
+</script>

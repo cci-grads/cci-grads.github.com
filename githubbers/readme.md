@@ -2,7 +2,7 @@
 
 1. Fork the repo
 2. Edit githubbers/githubbers.json from YOUR repo
-3. Create a pull request
+3. Create a pull request and wait for us to approve it
 4. See the result at [http://cci-grads.github.com/githubbers/](http://cci-grads.github.com/githubbers/)
 
 Why so difficult? The purpose of this directory is to both keep a list of CCI GitHubbers and to allow new GitHubbers to learn how to fork a repo and submit pull requests. With that knowledge, you can contribute to practically any project on GitHub!

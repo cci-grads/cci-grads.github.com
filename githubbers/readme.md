@@ -1,1 +1,11 @@
-Instructions for forking the repo and adding names to the JSON file should go here.
+# How to add yourself as a GitHubber
+
+1. Fork the repo
+2. Edit githubbers/githubbers.json
+3. Create a pull request
+
+How to fork a repo: https://help.github.com/articles/fork-a-repo
+How to create a pull request: https://help.github.com/articles/creating-a-pull-request
+More about using pull requests: https://help.github.com/articles/using-pull-requests
+
+(Note: Google is your friend.)

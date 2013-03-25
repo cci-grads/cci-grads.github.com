@@ -5,6 +5,8 @@
 3. Create a pull request
 4. See the result at [http://cci-grads.github.com/githubbers/](http://cci-grads.github.com/githubbers/)
 
+Why so difficult? The purpose of this directory is to both keep a list of CCI GitHubbers and to allow new GitHubbers to learn how to fork a repo and submit pull requests. With that knowledge, you can contribute to practically any project on GitHub!
+
 - How to fork a repo: https://help.github.com/articles/fork-a-repo
 - How to create a pull request: https://help.github.com/articles/creating-a-pull-request
 - More about using pull requests: https://help.github.com/articles/using-pull-requests

@@ -1,7 +1,7 @@
 # How to add yourself as a GitHubber
 
 1. Fork the repo
-2. Edit githubbers/githubbers.json
+2. Edit githubbers/githubbers.json from YOUR repo
 3. Create a pull request
 
 How to fork a repo: https://help.github.com/articles/fork-a-repo

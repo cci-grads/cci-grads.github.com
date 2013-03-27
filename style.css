@@ -1,0 +1,23 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Ubuntu);
+
+h1, h2 {
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, footer {
+  font-family: 'Ubuntu', sans-serif;
+  color: #000;
+}
+
+body {
+  color: #333;
+  margin: 1em auto 4em auto;
+  width: 960px;
+  font-family: "Droid Sans", sans-serif;
+  background-image:url(satinweave.png); 
+  background-repeat:repeat;
+}
+
+body > p {
+  width: 720px;
+}

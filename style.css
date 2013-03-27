@@ -21,3 +21,7 @@ body {
 body > p {
   width: 720px;
 }
+
+footer {
+  padding-top: 32px;
+}

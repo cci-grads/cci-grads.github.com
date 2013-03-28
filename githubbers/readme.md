@@ -1,7 +1,7 @@
 # How to add yourself as a GitHubber
 
 1. Fork the repo
-2. Edit githubbers/githubbers.json from YOUR repo
+2. Edit githubbers/githubbers.json from YOUR repo (to ensure your icon shows up, use the same email you use for GitHub)
 3. Create a pull request and wait for us to approve it
 4. See the result at [http://cci-grads.github.com/githubbers/](http://cci-grads.github.com/githubbers/)
 

@@ -4,9 +4,24 @@
 
 <style> 
   @import url(../style.css); 
+  
+  .githubber {
+    padding-top: 16px;
+  }
+
+  .info {
+    padding-top: 4px;
+  }
+
+  .gravatar {
+    float: left;
+    max-width: 48px;
+    padding-right: 8px;
+  }
 </style>
 
 <script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="md5.min.js"></script>
 
 
 <h1>GitHubbers</h1>
@@ -33,13 +48,20 @@ var div = d3.select(target);
 
 var githubbers = div.selectAll('githubbers')
   .data(d)
-  .enter().append('p');
+  .enter().append('p')
+    .classed('githubber', true);
 
-var names = githubbers.append('div')
-  .classed('name', true)
+var gravatars = githubbers.append('img')
+  .classed('gravatar', true)
+  .attr('src', function(d) { return "http://www.gravatar.com/avatar/"+ md5(d.email); });
+
+var info = githubbers.append('div')
+  .classed('info', true)
   .text(function(d) { return d.name; });
 
-var githubs = githubbers.append('a')
+info.append('br');
+
+var githubs = info.append('a')
   .classed('username', true)
   .attr('href', function(d) { return "http://github.com/" + d.username; })
   .text(function(d) { return "http://github.com/" + d.username; });

@@ -4,6 +4,12 @@ h1, h2 {
   text-rendering: optimizeLegibility;
 }
 
+.logo {
+  max-width: 50px;
+  vertical-align: middle;
+  border: 0;
+}
+
 h1, h2, footer {
   font-family: 'Ubuntu', sans-serif;
   color: #000;

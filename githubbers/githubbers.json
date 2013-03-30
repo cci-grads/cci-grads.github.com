@@ -56,14 +56,20 @@
 
 {
 "name"      : "Thomas Kraft",
-"email"     : "toma.kraft@outlook.com", 
+"email"     : "toma.kraft@outlook.com",
 "username"  : "tbkraf08"
 },
 
 {
 "name"      : "Grace Christenbery",
-"email"     : "gchriste@uncc.edu", 
+"email"     : "gchriste@uncc.edu",
 "username"  : "glchriste"
+},
+
+{
+"name"      : "Matthew Campbell",
+"email"     : "matt@matthewcampbell.org",
+"username"  : "matthew-campbell"
 }
 
 ]

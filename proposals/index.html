@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>CCI-Grads - Proposals</title>
+
+<style> 
+  @import url(../style.css); 
+  
+  .proposal {
+    padding-top: 16px;
+  }
+
+  .info {
+    padding-top: 4px;
+  }
+
+</style>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="md5.min.js"></script>
+
+<h1>
+  <img src="../ccigradslogo.png" class="logo"/>
+  GitHubbers
+</h1>
+
+<p>
+A directory of proposals by CCI Graduate Students. All PDFs are password protected. To obtain a password, you must be a graduate student in CCI and email Pratyush Gupta.
+</p>
+
+<div id="proposals"></div>
+
+<footer>
+  <a href="../" rel="author">CCI-Grads</a>
+</footer>
+
+
+<script>
+
+d3.json('proposals.json', function(d) {
+  render(d, '#proposals');
+});
+
+function render(d, target) {
+var div = d3.select(target);
+
+var githubbers = div.selectAll('proposals')
+  .data(d)
+  .enter().append('p')
+    .classed('proposal', true);
+
+var proposals = githubbers.append('a')
+  .classed('proposal', true)
+  .attr('href', function(d) { return d.pdf; })
+  .text(function(d) { return d.name; });
+}
+
+</script>
